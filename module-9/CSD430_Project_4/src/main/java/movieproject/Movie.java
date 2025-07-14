@@ -1,0 +1,87 @@
+// Adrian Marquez
+// CSD 430
+// 07/06/25
+
+package movieproject;
+
+public class Movie {
+    private int movie_id;
+    private String title;
+    private String genre;
+    private int release_year;
+    private String director;
+    private double rating;
+
+    // No-argument constructor
+    public Movie() {
+    }
+
+    // Constructor with all fields except movie_id 
+    public Movie(String title, String genre, int release_year, String director, double rating) {
+        this.title = title;
+        this.genre = genre;
+        this.release_year = release_year;
+        this.director = director;
+        this.rating = rating;
+    }
+
+    // Constructor with all fields (including movie_id)
+    public Movie(int movie_id, String title, String genre, int release_year, String director, double rating) {
+        this.movie_id = movie_id;
+        this.title = title;
+        this.genre = genre;
+        this.release_year = release_year;
+        this.director = director;
+        this.rating = rating;
+    }
+
+    // Getters and Setters
+
+    public int getMovie_id() {
+        return movie_id;
+    }
+
+    public void setMovie_id(int movie_id) {
+        this.movie_id = movie_id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public int getRelease_year() {
+        return release_year;
+    }
+
+    public void setRelease_year(int release_year) {
+        this.release_year = release_year;
+    }
+
+    public String getDirector() {
+        return director;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+}
